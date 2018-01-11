@@ -77,3 +77,6 @@ function that is a simple modification of plotFFT2V, but which uses an
 input vector of frequencies, and plots the data directly without
 FFTing it.  They are found by Octave because they are in the same
 directory as the testTwoStageBJT.m script.
+
+### Exported schematic image
+![Created with Qucs "Export as image" option"](export.png)
