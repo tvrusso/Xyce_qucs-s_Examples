@@ -22,14 +22,14 @@ they have in the subcircuit definition.
 **To run this, you must copy the contents of the "user_lib" subdirectory
 into ~/.qucs/user_lib.**
 
-**You must also change the path names associated with the five SPICE
+You must also change the path names associated with the five SPICE
 lib devices to point to your own home directory.  There are two ways
 to do this.  The first is to double-click on each of the five
 subcircuit symbols (the two AD633 and three op-amps) and manually
 change the path names stored there to point at your own home
 directory.  Alternatively, you may edit the .sch file using the text
 editor of your choice, and change the five lines that contain a path
-name to point to your own .qucs/user_lib directory. **
+name to point to your own .qucs/user_lib directory. 
 
 ## Special Qucs notes
 
