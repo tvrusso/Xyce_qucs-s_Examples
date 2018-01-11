@@ -1,4 +1,4 @@
-# Quartz crystal oscillator
+# Quartz crystal filter
 
 The QuartzCrystal circuit is a minor variant of what's in the qucs-s
 examples suite (examples/ngspice/quarz.sch) --- that one used
