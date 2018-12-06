@@ -3,7 +3,7 @@ implementations of the Diode Clipper examples from the Xyce Users'
 Guide.  We also demonstrate use of native qucs-s graphing of results
 and proper use of parameter sweeps.
 
-### DC example drips a qucs-s bug in versions older than 0.0.21
+### DC example trips a qucs-s bug in versions older than 0.0.21
 
 As noted in the SuperSimpleDC example, versions of qucs-s prior to
 version 0.0.21 have a bug in netlist generation for DC sweeps, which
