@@ -12,26 +12,29 @@ the "Param" parameter of the sweep.
 
 Put the start, stop, and number of points into the appropriate boxes.
 
-### There's a bug in versions of qucs-s at least up to 0.0.20
+### There was a bug in versions of qucs-s up to 0.0.20
 
-This demo also illustrates a bug in the netlist generation step of
+This demo works as intended in version 0.0.21 of qucs-s.  However, there
+was a bug in the netlist generation step of previous versions of
 qucs-s for parameter sweeps, documented in
 https://github.com/ra3xdh/qucs_s/issues/8.  While the dialog box for
 setting up the parameter sweep object correctly computes the step size
 from the number of points, or the number of points from the step size,
 there is an off-by-one error in the netlist generation stage which
 incorrectly computes the parameter sweep step from the number of
-points chosen.  Check the issue report, though, in case this bug has
-been fixed.
+points chosen.  
 
-Ignore the "step" value in the parameter sweep dialog, as Qucs-s
-doesn't use it to generate the netlist, and will compute the step from
-(stop-start)/points instead of (stop-start)/(points-1).  Therefore,
-you need to set "Number" in the dialog to one fewer point than you
-actually want in order to get the netlist generation correct.  In this
-demo, we want to sweep V1 from 0 to 5 in steps of .5, which would
-normally be 11 steps (0.0, 0.5, 1.0, 1.5, ... 4.5, 5.0), but you can
-see in the schematic that we use Points=10 instead.
+If you are a version of qucs-s older than 0.0.21, you will have to
+modify the parameter sweep to get it to generate a netlist that takes
+the intended number of steps.  Ignore the "step" value in the
+parameter sweep dialog, as Qucs-s doesn't use it to generate the
+netlist, and will compute the step from (stop-start)/points instead of
+(stop-start)/(points-1).  Therefore, you need to set "Number" in the
+dialog to one fewer point than you actually want in order to get the
+netlist generation correct.  In this demo, we want to sweep V1 from 0
+to 5 in steps of .5, which would normally be 11 steps (0.0, 0.5, 1.0,
+1.5, ... 4.5, 5.0), but you can see in the schematic that we use
+Points=10 instead.
 
 ### Xyce and SPICE support DC lines that Qucs schematics don't do natively
 
