@@ -1,6 +1,6 @@
 <Qucs Schematic 0.0.23>
 <Properties>
-  <View=0,-130,2139,799,1,0,250>
+  <View=0,-180,2139,639,1,0,0>
   <Grid=10,10,1>
   <DataSet=quarz_test.dat>
   <DataDisplay=quarz_test.dpl>
@@ -39,5 +39,5 @@
   </Rect>
 </Diagrams>
 <Paintings>
-  <Text 250 -110 12 #000000 0 "This example illustrates how to use subcircuits with Ngspice and Xyce.\nYou need to specify absolute location of subcircuit "quarz.sch".\nThis subcircuit is in the same directory where is this example.\n\nNOTE: This Example could be run with Qucs and Ngspice/Xyce, but has\nbeen modified from the version shipped with qucs-s so that K can be computed\nthe "Xyce way."  (i.e. from strictly real quantities, with complex \narithmetic handled explicitly)">
+  <Text 250 -110 12 #000000 0 "This example illustrates how to use subcircuits with Ngspice and Xyce.\nYou need to specify absolute location of subcircuit "quarz.sch".\nThis subcircuit is in the same directory where is this example.\n\nThe primary difference between this version and the qucs-s standard \nngspice example is in the presence of the "XYCE script" block.">
 </Paintings>
