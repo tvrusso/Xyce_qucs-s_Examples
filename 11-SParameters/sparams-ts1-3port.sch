@@ -1,6 +1,6 @@
 <Qucs Schematic 0.0.23>
 <Properties>
-  <View=-67,0,1264,800,1,67,0>
+  <View=-67,0,1264,800,1,0,0>
   <Grid=10,10,1>
   <DataSet=sparams-ts1-3port.dat>
   <DataDisplay=sparams-ts1-3port.dpl>
@@ -75,7 +75,7 @@
   <600 40 630 40 "" 0 0 0 "">
 </Wires>
 <Diagrams>
-  <Rect 110 570 240 160 3 #c0c0c0 1 00 1 0 20000 100000 1 -133.285 50 12.1092 1 -1 1 1 315 0 225 "" "" "">
+  <Rect 110 570 240 160 3 #c0c0c0 1 00 1 -1 0.5 1 1 -1 1 1 1 -1 1 1 315 0 225 "" "" "">
 	<"xyce/SDB(1,1)" #0000ff 0 3 0 0 0>
 	<"xyce/SDB(1,2)" #ff0000 0 3 0 0 0>
 	<"xyce/SDB(1,3)" #ff00ff 0 3 0 0 0>

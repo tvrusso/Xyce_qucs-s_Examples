@@ -19,4 +19,18 @@ does demonstrate multi-port S parameter generation in a schematic
 capture environment that matches the way the Xyce team verifies that
 multi-port S-parameter simulation actually works.
 
+The final pair of schematics, tline-sparam-ac.sch and tline-sparam.sch
+show two different ways of computing S parameters for the same device
+under test.  The first uses only standard SPICE-style AC analysis and
+specially wired circuits such as could be built on the workbench to
+measure S parameters, and the second uses Xyce S parameter analysis
+and port sources.  The Smith plots of S parameters obtained by either
+of these methods match the other.
+
 ![Created with Qucs "Export as image" option"](export.png)
+
+![Created with Qucs "Export as image" option"](export2.png)
+
+![Created with Qucs "Export as image" option"](export3.png)
+
+![Created with Qucs "Export as image" option"](export4.png)
