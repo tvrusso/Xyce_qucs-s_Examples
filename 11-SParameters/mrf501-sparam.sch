@@ -1,6 +1,6 @@
 <Qucs Schematic 0.0.23>
 <Properties>
-  <View=0,31,1000,770,1,0,60>
+  <View=0,-108,1000,780,1,0,0>
   <Grid=10,10,1>
   <DataSet=mrf501-sparam.dat>
   <DataDisplay=mrf501-sparam.dpl>
@@ -19,7 +19,6 @@
   <.SP SP1 1 740 60 0 65 0 0 "log" 1 "10k" 1 "20MEG" 1 "100" 1 "no" 0 "1" 0 "2" 0 "no" 0 "no" 0>
   <Pac P2 1 350 140 18 -26 0 1 "2" 1 "50 Ohm" 1 "0 dBm" 0 "1 GHz" 0 "26.85" 0>
   <GND * 1 350 170 0 0 0 0>
-  <SpiceModel SpiceModel1 1 90 290 -30 16 0 0 ".MODEL testline transline r=1e-3 l=0.0u c=60p" 1 "" 0 "" 0 "" 0 "Line_5=" 0>
   <Pac P1 1 70 130 18 -26 0 1 "1" 1 "50 Ohm" 1 "0 dBm" 0 "1 GHz" 0 "26.85" 0>
   <GND * 1 70 160 0 0 0 0>
   <GND * 1 220 170 0 0 0 0>
@@ -38,6 +37,7 @@
 	<"xyce/S(2,1)" #0000ff 0 3 0 0 0>
   </Smith>
   <Smith 780 470 200 200 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 "" "" "">
+	<"xyce/S(1,2)" #0000ff 0 3 0 0 0>
   </Smith>
   <Smith 780 720 200 200 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 "" "" "">
 	<"xyce/S(2,2)" #0000ff 0 3 0 0 0>
