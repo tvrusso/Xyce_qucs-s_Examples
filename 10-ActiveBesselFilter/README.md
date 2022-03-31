@@ -12,7 +12,7 @@ clicks "Calculate and copy to clipboard," then pastes the result into
 qucs.
 
 
-## Modifications for Xyce
+## This example contains workarounds for older versions of Xyce
 
 The circuit that is put into the clipboard by qucsactivefilter has a
 DC and AC simulation object, and also an "Equation" block.  It will
@@ -21,7 +21,7 @@ Since the equation block is intended to compute the transfer function,
 it is useful to modify the schematic slightly so that Xyce can compute
 the same function.
 
-Since Xyce's expression library cannot do complex arithmetic, it is
+Since Xyce's original expression library could do complex arithmetic, it was
 necessary to express the transfer function K=db(V(out)/V(in)) in terms
 of real and imaginary parts, and allow the expression library to
 evaluate it in real arithmetic.
@@ -47,3 +47,9 @@ Simulation" and "Equation" objects.  One will have to adjust the
 parameters of the AC analysis by editing the Xyce Script object as
 needed.
 
+While this real-equivalent computation still works, newer versions of
+Xyce (since around Xyce 7.4) can do complex arithmetic in expressions,
+and one could simply print "{db(V(out)/V(in)}" on a print line
+instead.  I have not yet gone through this example and made this
+change for these newer versions.  I have made this change in the
+06-QuartzCrystal example.
