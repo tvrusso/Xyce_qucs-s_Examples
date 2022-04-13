@@ -21,10 +21,10 @@ Since the equation block is intended to compute the transfer function,
 it is useful to modify the schematic slightly so that Xyce can compute
 the same function.
 
-Since Xyce's original expression library could do complex arithmetic, it was
-necessary to express the transfer function K=db(V(out)/V(in)) in terms
-of real and imaginary parts, and allow the expression library to
-evaluate it in real arithmetic.
+Since Xyce's original expression library could not do complex
+arithmetic, it was necessary to express the transfer function
+K=db(V(out)/V(in)) in terms of real and imaginary parts, and allow the
+expression library to evaluate it in real arithmetic.
 
 The real-equivalent expression is:
 
@@ -50,6 +50,5 @@ needed.
 While this real-equivalent computation still works, newer versions of
 Xyce (since around Xyce 7.4) can do complex arithmetic in expressions,
 and one could simply print "{db(V(out)/V(in)}" on a print line
-instead.  I have not yet gone through this example and made this
-change for these newer versions.  I have made this change in the
-06-QuartzCrystal example.
+instead.  I have updated all the examples here to use this formulation
+instead of the more complicated real-equivalent expansion.

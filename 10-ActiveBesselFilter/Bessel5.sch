@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.19>
+<Qucs Schematic 0.0.23>
 <Properties>
-  <View=0,-200,2760,940,1,0,200>
+  <View=0,-120,2760,796,1,1358,0>
   <Grid=10,10,1>
   <DataSet=Bessel5.dat>
   <DataDisplay=Bessel5.dpl>
@@ -41,7 +41,7 @@
   <R R8 1 1440 240 -75 -52 1 0 "4.364k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <R R9 1 1650 310 -26 15 1 2 "0.000k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <C C5 1 1510 290 26 -45 1 1 "10.000nF" 1 "" 0 "neutral" 0>
-  <.XYCESCR XYCESCR1 1 950 510 0 51 0 0 ".ac lin 501 1 10K\n.PRINT AC format=raw file=ac.txt V(OUT) {10.0*log10(abs((VR(OUT)*VR(IN)+VI(OUT)*VI(IN))**2-(VI(OUT)*VR(IN)-VR(OUT)*VI(IN))**2)/(VR(OUT)**2+VR(IN)**2)**2)}" 1 "" 0 "ac.txt" 0>
+  <.XYCESCR XYCESCR1 1 950 510 0 51 0 0 ".ac lin 501 1 10K\n.PRINT AC format=raw file=ac.txt V(OUT) {db(V(OUT)/V(IN))}" 1 "" 0 "ac.txt" 0>
 </Components>
 <Wires>
   <380 300 430 300 "in" 430 270 22 "">
@@ -93,9 +93,9 @@
 </Wires>
 <Diagrams>
   <Rect 1780 461 680 401 3 #c0c0c0 1 00 1 -1 0.2 1 1 -1 0.2 1 1 -1 0.2 1 315 0 225 "" "K" "">
-	<"xyce/Bessel5:ac.{10.0*LOG10(ABS((VR(OUT)*VR(IN)+VI(OUT)*VI(IN))**2-(VI(OUT)*VR(IN)-VR(OUT)*VI(IN))**2)/(VR(OUT)**2+VR(IN)**2)**2)}" #0000ff 0 3 0 0 0>
+	<"xyce/ac.{DB(V(OUT)/V(IN))}" #0000ff 0 3 0 0 0>
   </Rect>
 </Diagrams>
 <Paintings>
-  <Text 90 510 12 #000000 0 "The schematic here was produced by the qucs tool "qucsactivefilter."\n\nParameters that generated this were all of the defaults of the qucsactivefilter program, with the exception of the \napproximation type, which was changed to "Bessel."  Once these parameters are set,\none simply presses the "Calculate and copy to clipboard" button, then pastes the contents\nof the clipboard into a new qucs schematic panel. \n\nqucsactive filter will produce a schematic that includes a DC Simulation object, an AC Simulation Object,\nand an Equation block.  Unfortunately, the contents of the Equation block are ignored\nwhen using Xyce as the simulator, because Xyce does not support complex arithmetic.\n\nThis schematic has been modified to replace the AC Simulation and Equation objects with an\nequivalent Xyce Script object.\n">
+  <Text 90 510 12 #000000 0 "The schematic here was produced by the qucs tool "qucsactivefilter."\n\nParameters that generated this were all of the defaults of the qucsactivefilter program, with the exception of the \napproximation type, which was changed to "Bessel."  Once these parameters are set,\none simply presses the "Calculate and copy to clipboard" button, then pastes the contents\nof the clipboard into a new qucs schematic panel. \n\nqucsactive filter will produce a schematic that includes a DC Simulation object, an AC Simulation Object,\nand an Equation block.  Unfortunately, the contents of the Equation block are ignored\nwhen using Xyce as the simulator, because Xyce does not support equation blocks.\n\nThis schematic has been modified to replace the AC Simulation and Equation objects with an\nequivalent Xyce Script object.\n">
 </Paintings>

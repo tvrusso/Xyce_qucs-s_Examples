@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.19>
+<Qucs Schematic 0.0.23>
 <Properties>
-  <View=0,0,2534,800,1,0,0>
+  <View=0,0,2553,800,1,1458,0>
   <Grid=10,10,1>
   <DataSet=Bessel9.dat>
   <DataDisplay=Bessel9.dpl>
@@ -57,7 +57,7 @@
   <R R14 1 2240 180 -75 -52 1 0 "2.840k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <R R15 1 2450 250 -26 15 1 2 "0.000k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <C C9 1 2310 230 26 -45 1 1 "10.000nF" 1 "" 0 "neutral" 0>
-  <.XYCESCR XYCESCR1 1 580 480 0 51 0 0 ".ac lin 501 1 10K\n.PRINT AC format=raw file=ac.txt V(OUT) {10.0*log10(abs((VR(OUT)*VR(IN)+VI(OUT)*VI(IN))**2-(VI(OUT)*VR(IN)-VR(OUT)*VI(IN))**2)/(VR(OUT)**2+VR(IN)**2)**2)}" 1 "" 0 "ac.txt" 0>
+  <.XYCESCR XYCESCR1 1 580 480 0 51 0 0 ".ac lin 501 1 10K\n.PRINT AC format=raw file=ac.txt V(OUT) {db(V(out)/V(in))}" 1 "" 0 "ac.txt" 0>
 </Components>
 <Wires>
   <160 240 210 240 "in" 210 210 22 "">
@@ -140,8 +140,8 @@
   <2360 250 2360 300 "" 0 0 0 "">
 </Wires>
 <Diagrams>
-  <Rect 1860 600 240 160 3 #c0c0c0 1 00 1 0 2000 10000 1 -52.5957 20 4.05732 1 -1 1 1 315 0 225 "" "K" "">
-	<"xyce/ac.{10.0*LOG10(ABS((VR(OUT)*VR(IN)+VI(OUT)*VI(IN))**2-(VI(OUT)*VR(IN)-VR(OUT)*VI(IN))**2)/(VR(OUT)**2+VR(IN)**2)**2)}" #0000ff 0 3 0 0 0>
+  <Rect 1860 600 240 160 3 #c0c0c0 1 00 1 -1 0.5 1 1 -1 1 1 1 -1 1 1 315 0 225 "" "K" "">
+	<"xyce/ac.{DB(V(OUT)/V(IN))}" #0000ff 0 3 0 0 0>
   </Rect>
 </Diagrams>
 <Paintings>
