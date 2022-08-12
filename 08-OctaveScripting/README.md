@@ -1,3 +1,18 @@
+#THIS TEST IS BROKEN!
+
+While I had once had this test working, not long after creating it my
+system's octave port became unusable and I no longer have it
+installed.
+
+I just managed to get a working version of octave and found that
+Xyce's output of complex values and the way Qucs-s stores them in the
+.dat file have both changed and are no longer compatible with the
+octave scripts in this directory.
+
+If someone has the time and energy to devote to fixing my top-level
+octave script to work with current versions of Xyce and qucs-s, I
+would be very grateful.  I have neither at the moment.
+
 # Demonstration of use of Octave scripting for post-processing
 
 This demo is based on the example in section 6.7.4 of the Qucs-S help
