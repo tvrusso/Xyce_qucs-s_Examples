@@ -1,9 +1,9 @@
-<Qucs Schematic 0.0.20>
+<Qucs Schematic 0.0.24>
 <Properties>
   <View=-51,-140,1537,680,1,0,0>
   <Grid=10,10,1>
-  <DataSet=DiodeClipper_qucs-s.dat>
-  <DataDisplay=DiodeClipper_qucs-s.dpl>
+  <DataSet=DiodeClipper_transient.dat>
+  <DataDisplay=DiodeClipper_transient.dpl>
   <OpenDisplay=0>
   <Script=DiodeClipper_qucs-s.m>
   <RunScript=0>
@@ -27,7 +27,7 @@
   <SpiceModel D1N3940 1 550 510 -30 16 0 0 ".MODEL D1N3940 D(IS = 4E-10 N = 1.48 CJO = 1.95E-11 M = .38 PHI=.4 FC=.9 TT=8e-7 BV=600 RS=.105)" 1 "" 0 "" 0 "" 0 "Line_5=" 0>
   <DIODE_SPICE D2 1 760 90 15 -26 0 1 "D1N3940" 1 "" 0 "" 0 "" 0 "" 0>
   <C C1 1 930 30 -26 17 0 0 ".47uF" 1 "" 0 "neutral" 0>
-  <.TR TR1 1 500 350 0 57 0 0 "lin" 1 "0" 1 "2 ms" 1 "11" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
+  <.TR TR1 1 500 350 0 65 0 0 "lin" 1 "0" 1 "2 ms" 1 "11" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
   <R R1 1 470 30 -26 15 0 0 "1K Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "US" 0>
   <R R3 1 560 90 15 -26 0 1 "3.3K Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "US" 0>
   <R R4 1 1040 90 15 -26 0 1 "5.6K Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "US" 0>
@@ -53,7 +53,7 @@
   <760 30 760 30 "N2" 790 0 0 "">
 </Wires>
 <Diagrams>
-  <Rect 80 110 240 160 3 #c0c0c0 1 00 1 -1 0.5 1 1 -1 1 1 1 -1 1 1 315 0 225 "" "" "">
+  <Rect 80 110 240 160 3 #c0c0c0 1 00 1 -1 0.5 1 1 -1 1 1 1 -1 1 1 315 0 225 0 0 0 "" "" "">
 	<"xyce/DiodeClipper_transient:tran.V(IN)" #0000ff 0 3 0 0 0>
 	<"xyce/DiodeClipper_transient:tran.V(N2)" #ff0000 0 3 0 0 0>
 	<"xyce/DiodeClipper_transient:tran.V(OUT)" #ff00ff 0 3 0 0 0>

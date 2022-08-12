@@ -1,9 +1,9 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=0,0,1667,800,1,0,0>
+  <View=0,0,1752,800,1,0,0>
   <Grid=10,10,1>
-  <DataSet=dum.dat>
-  <DataDisplay=dum.dpl>
+  <DataSet=SuperSimpleDC.dat>
+  <DataDisplay=SuperSimpleDC.dpl>
   <OpenDisplay=0>
   <Script=dum.m>
   <RunScript=0>
@@ -28,7 +28,7 @@
   <300 180 400 180 "" 0 0 0 "">
 </Wires>
 <Diagrams>
-  <Rect 650 400 240 160 3 #c0c0c0 1 00 1 -1 0.5 1 1 -1 1 1 1 -1 1 1 315 0 225 "" "" "">
+  <Rect 650 400 240 160 3 #c0c0c0 1 00 1 -1 0.5 1 1 -1 1 1 1 -1 1 1 315 0 225 0 0 0 "" "" "">
 	<"xyce/SuperSimpleDC:I(PR1)" #0000ff 0 3 0 0 0>
   </Rect>
 </Diagrams>

@@ -1,9 +1,9 @@
-<Qucs Schematic 0.0.23>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=0,-190,1808,650,1,65,0>
+  <View=0,-190,1808,729,1,550,240>
   <Grid=10,10,1>
-  <DataSet=AC-sparams.dat>
-  <DataDisplay=AC-sparams.dpl>
+  <DataSet=tline-sparam-ac.dat>
+  <DataDisplay=tline-sparam-ac.dpl>
   <OpenDisplay=1>
   <Script=AC-sparams.m>
   <RunScript=0>
@@ -58,16 +58,16 @@
   <540 140 540 140 "S12" 570 110 0 "">
 </Wires>
 <Diagrams>
-  <Smith 930 320 200 200 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 "" "" "">
+  <Smith 930 320 200 200 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 0 0 0 "" "" "">
 	<"xyce/tline-sparam-ac:ac.V(S11)" #0000ff 0 3 0 0 0>
   </Smith>
-  <Smith 930 580 200 200 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 "" "" "">
+  <Smith 930 580 200 200 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 0 0 0 "" "" "">
 	<"xyce/tline-sparam-ac:ac.V(S21)" #0000ff 0 3 0 0 0>
   </Smith>
-  <Smith 1200 320 200 200 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 "" "" "">
+  <Smith 1200 320 200 200 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 0 0 0 "" "" "">
 	<"xyce/tline-sparam-ac:ac.V(S12)" #0000ff 0 3 0 0 0>
   </Smith>
-  <Smith 1200 590 200 200 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 "" "" "">
+  <Smith 1200 590 200 200 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 0 0 0 "" "" "">
 	<"xyce/tline-sparam-ac:ac.V(S22)" #0000ff 0 3 0 0 0>
   </Smith>
 </Diagrams>
